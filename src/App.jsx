@@ -39,11 +39,25 @@ function App() {
     clearInterval(intervalId);
   }
 
-  console.log(time);
+  let hours = Math.floor(time / 360000);
+  let minutes = Math.floor((time % 36000) / 6000);
+  let seconds = Math.floor((time % 6000) / 100);
+  let milliseconds = time % 100;
+
+  // Format each component to 2 digits
+  hours = String(hours).padStart(2, "0");
+  minutes = String(minutes).padStart(2, "0");
+  seconds = String(seconds).padStart(2, "0");
+  milliseconds = String(milliseconds).padStart(2, "0");
 
   return (
     <>
-      <RenderTime time="00:00:00:00" />
+      <RenderTime
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+        milliseconds={milliseconds}
+      />
       <Button
         variant="filled"
         onClick={() => {

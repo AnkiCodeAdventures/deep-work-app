@@ -1,11 +1,10 @@
-import { Paper, Text } from "@mantine/core";
-
-function RenderTime({ time }) {
+function RenderTime({ hours, minutes, seconds, milliseconds }) {
   return (
-    <div>
-      <Paper>
-        <Text>{time}</Text>
-      </Paper>
+    <div style={{ display: "flex" }}>
+      <div>{hours}</div>
+      <div>{minutes}</div>
+      <div>{seconds}</div>
+      <div>{milliseconds}</div>
     </div>
   );
 }
