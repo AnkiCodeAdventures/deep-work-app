@@ -1,6 +1,9 @@
+body {
+  display: flex;
+  background-color: #252525 !important;
+  width: 100vw;
+}
 #root {
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }

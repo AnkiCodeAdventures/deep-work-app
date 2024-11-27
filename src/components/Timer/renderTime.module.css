@@ -1,0 +1,40 @@
+.displayTime {
+  display: flex;
+  margin: 0 auto;
+  background: rgb(252, 196, 116);
+  background: linear-gradient(
+    147deg,
+    rgba(252, 196, 116, 1) 4%,
+    rgba(183, 82, 193, 1) 48%,
+    rgba(71, 88, 209, 1) 96%
+  );
+  width: 90%;
+  height: 400px;
+  border-radius: 20px;
+  color: #000100;
+  font-size: 9rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.timeComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-basis: 20%;
+}
+
+.millisecond {
+  font-size: 6rem;
+}
+
+.colonBox {
+  display: flex;
+  align-items: center;
+}
+
+.colon {
+  font-size: 7rem;
+  margin-bottom: 18px;
+}
