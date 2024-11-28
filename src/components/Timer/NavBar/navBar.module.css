@@ -1,0 +1,14 @@
+.navBar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}

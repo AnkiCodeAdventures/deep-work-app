@@ -3,6 +3,7 @@ import "./App.css";
 import { Button } from "@mantine/core";
 import RenderTime from "./components/Timer/RenderTime";
 import styles from "./app.module.css";
+import NavBar from "./components/Timer/NavBar/NavBar";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -59,39 +60,42 @@ function App() {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
-        <RenderTime
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
-          milliseconds={milliseconds}
-        />
+      <div className={styles.appContainer}>
+        <NavBar />
+        <div style={{ position: "relative" }}>
+          <RenderTime
+            hours={hours}
+            minutes={minutes}
+            seconds={seconds}
+            milliseconds={milliseconds}
+          />
 
-        <Button
-          aria-label="start"
-          variant="filled"
-          className={`${styles.timerButton} ${styles.start}`}
-          onClick={() => {
-            status === STATUS.IDLE
-              ? handleStart()
-              : status === STATUS.RUNNING
-              ? handlePause()
-              : status === STATUS.PAUSED
-              ? handleStart()
-              : null;
-          }}
-        >
-          {buttonText}
-        </Button>
-        <Button
-          aria-label="reset"
-          className={`${styles.timerButton} ${styles.reset}`}
-          onClick={() => {
-            handleReset();
-          }}
-        >
-          RESET
-        </Button>
+          <Button
+            aria-label="start"
+            variant="filled"
+            className={`${styles.timerButton} ${styles.start}`}
+            onClick={() => {
+              status === STATUS.IDLE
+                ? handleStart()
+                : status === STATUS.RUNNING
+                ? handlePause()
+                : status === STATUS.PAUSED
+                ? handleStart()
+                : null;
+            }}
+          >
+            {buttonText}
+          </Button>
+          <Button
+            aria-label="reset"
+            className={`${styles.timerButton} ${styles.reset}`}
+            onClick={() => {
+              handleReset();
+            }}
+          >
+            RESET
+          </Button>
+        </div>
       </div>
     </>
   );

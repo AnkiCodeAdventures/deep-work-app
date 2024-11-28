@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   display: flex;
   background-color: #252525 !important;
   width: 100vw;
+  padding: 0 2.5rem;
 }
 #root {
   width: 1280px;
