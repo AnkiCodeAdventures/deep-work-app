@@ -1,0 +1,19 @@
+.timerButton {
+  background-color: black;
+  color: white;
+  width: 10%;
+  height: 41px;
+  position: absolute;
+  bottom: 10px;
+}
+.start {
+  left: 129px;
+}
+.reset {
+  left: 275px;
+}
+
+.timerButton:hover {
+  background-color: black;
+  color: white;
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Button } from "@mantine/core";
 import RenderTime from "./components/Timer/RenderTime";
+import styles from "./app.module.css";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -52,26 +53,41 @@ function App() {
 
   return (
     <>
-      <RenderTime
-        hours={hours}
-        minutes={minutes}
-        seconds={seconds}
-        milliseconds={milliseconds}
-      />
-      <Button
-        variant="filled"
-        onClick={() => {
-          status === STATUS.IDLE
-            ? handleStart()
-            : status === STATUS.RUNNING
-            ? handlePause()
-            : status === STATUS.PAUSED
-            ? handleStart()
-            : null;
-        }}
-      >
-        {buttonText}
-      </Button>
+      <div style={{ position: "relative" }}>
+        <RenderTime
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds}
+          milliseconds={milliseconds}
+        />
+        <Button
+          aria-label="reset"
+          className={`${styles.timerButton} ${styles.reset}`}
+          onClick={() => {
+            setTime(0);
+            handlePause();
+          }}
+        >
+          RESET
+        </Button>
+
+        <Button
+          aria-label="start"
+          variant="filled"
+          className={`${styles.timerButton} ${styles.start}`}
+          onClick={() => {
+            status === STATUS.IDLE
+              ? handleStart()
+              : status === STATUS.RUNNING
+              ? handlePause()
+              : status === STATUS.PAUSED
+              ? handleStart()
+              : null;
+          }}
+        >
+          {buttonText}
+        </Button>
+      </div>
     </>
   );
 }
