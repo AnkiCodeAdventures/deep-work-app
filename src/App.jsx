@@ -40,6 +40,12 @@ function App() {
     clearInterval(intervalId);
   }
 
+  function handleReset() {
+    setTime(0);
+    setStatus(STATUS.IDLE);
+    clearInterval(intervalId);
+  }
+
   let hours = Math.floor(time / 360000);
   let minutes = Math.floor((time % 36000) / 6000);
   let seconds = Math.floor((time % 6000) / 100);
@@ -60,16 +66,6 @@ function App() {
           seconds={seconds}
           milliseconds={milliseconds}
         />
-        <Button
-          aria-label="reset"
-          className={`${styles.timerButton} ${styles.reset}`}
-          onClick={() => {
-            setTime(0);
-            handlePause();
-          }}
-        >
-          RESET
-        </Button>
 
         <Button
           aria-label="start"
@@ -86,6 +82,15 @@ function App() {
           }}
         >
           {buttonText}
+        </Button>
+        <Button
+          aria-label="reset"
+          className={`${styles.timerButton} ${styles.reset}`}
+          onClick={() => {
+            handleReset();
+          }}
+        >
+          RESET
         </Button>
       </div>
     </>
