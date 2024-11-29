@@ -14,6 +14,7 @@
   font-size: 9rem;
   justify-content: center;
   gap: 1rem;
+  margin-top: 16px;
 }
 
 .timeComponent {
@@ -36,4 +37,48 @@
 .colon {
   font-size: 7rem;
   margin-bottom: 18px;
+}
+
+@media (max-width: 1110px) {
+  .displayTime {
+    font-size: 7rem;
+    margin-top: 0;
+  }
+  .millisecond {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .displayTime {
+    font-size: 5rem;
+  }
+  .millisecond {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .displayTime {
+    height: 300px;
+  }
+  .displayTime {
+    font-size: 4rem;
+  }
+  .millisecond {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .colonBox {
+    display: none;
+  }
+  .displayTime {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 564px;
+    gap: 0;
+    padding: 20px;
+  }
 }

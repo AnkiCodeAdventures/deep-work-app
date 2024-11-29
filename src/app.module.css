@@ -10,7 +10,7 @@
 .timerButton {
   background-color: black;
   color: white;
-  width: 10%;
+  width: 128px;
   height: 41px;
   position: absolute;
   bottom: 10px;
@@ -22,7 +22,34 @@
   left: 275px;
 }
 
+.squareButton {
+  display: none;
+}
+
 .timerButton:hover {
   background-color: black;
   color: white;
+}
+
+@media (max-width: 800px) {
+  .start {
+    left: 25%;
+  }
+  .reset {
+    left: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  .timerButton {
+    height: 70px;
+    width: 70px;
+    bottom: 37px;
+  }
+  .rectangleButton {
+    display: none;
+  }
+  .squareButton {
+    display: unset;
+  }
 }

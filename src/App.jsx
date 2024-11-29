@@ -4,6 +4,10 @@ import { Button } from "@mantine/core";
 import RenderTime from "./components/Timer/RenderTime";
 import styles from "./app.module.css";
 import NavBar from "./components/Timer/NavBar/NavBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPause } from "@fortawesome/free-solid-svg-icons";
+import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -18,13 +22,17 @@ function App() {
   const [time, setTime] = useState(0);
   const [status, setStatus] = useState(STATUS.IDLE);
   let buttonText;
+  let iconType;
 
   if (status === STATUS.IDLE) {
     buttonText = "START";
+    iconType = faPlay;
   } else if (status === STATUS.RUNNING) {
     buttonText = "PAUSE";
+    iconType = faPause;
   } else if (status === STATUS.PAUSED) {
     buttonText = "RESUME";
+    iconType = faPlay;
   }
 
   function handleStart() {
@@ -84,7 +92,10 @@ function App() {
                 : null;
             }}
           >
-            {buttonText}
+            <span className={styles.rectangleButton}>{buttonText}</span>
+            <span className={styles.squareButton}>
+              <FontAwesomeIcon icon={iconType} />
+            </span>
           </Button>
           <Button
             aria-label="reset"
@@ -93,7 +104,10 @@ function App() {
               handleReset();
             }}
           >
-            RESET
+            <span className={styles.rectangleButton}>RESET</span>
+            <span className={styles.squareButton}>
+              <FontAwesomeIcon icon={faRotateRight} />
+            </span>
           </Button>
         </div>
       </div>

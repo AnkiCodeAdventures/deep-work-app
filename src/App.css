@@ -4,9 +4,15 @@ body {
   display: flex;
   background-color: #252525 !important;
   width: 100vw;
-  padding: 0 2.5rem;
+  padding: 1.5rem 3rem;
 }
 #root {
   width: 1280px;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 1rem 1rem 2rem 1rem;
+  }
 }
