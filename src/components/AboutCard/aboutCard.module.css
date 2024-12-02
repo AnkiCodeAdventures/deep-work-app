@@ -1,0 +1,24 @@
+.about {
+  background-color: #f6f2ef;
+  color: black;
+  border: black solid 1px;
+  width: 35%;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stanza1 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.stanza2 {
+}
+
+.word {
+  font-style: oblique;
+  font-weight: 500;
+}
