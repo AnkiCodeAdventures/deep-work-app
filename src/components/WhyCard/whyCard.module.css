@@ -1,0 +1,14 @@
+.why {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #424242;
+  color: white;
+  width: 62%;
+  height: 450px;
+  border-radius: 20px;
+}
+.word {
+  font-style: oblique;
+  font-weight: 500;
+}
