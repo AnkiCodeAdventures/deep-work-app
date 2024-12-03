@@ -8,6 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
+import AboutCard from "./components/AboutCard/AboutCard";
+import WhyCard from "./components/WhyCard/WhyCard";
+import PsychologyCard from "./components/PsychologyCard/PsychologyCard";
+import AttentionResidue from "./components/AttentionResidue/AttentionResidue";
+import RulesCard from "./components/RulesCard/RulesCard";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -110,6 +115,11 @@ function App() {
             </span>
           </Button>
         </div>
+        <AboutCard />
+        <WhyCard />
+        <PsychologyCard />
+        <AttentionResidue />
+        <RulesCard />
       </div>
     </>
   );
