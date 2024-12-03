@@ -1,0 +1,15 @@
+.psychology {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(36, 141, 226);
+  background: linear-gradient(
+    63deg,
+    rgba(36, 141, 226, 1) 16%,
+    rgba(152, 83, 223, 1) 84%
+  );
+  color: white;
+  width: 58%;
+  height: 450px;
+  border-radius: 20px;
+}
