@@ -1,0 +1,32 @@
+.attentionResidue {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffcc70;
+  color: black;
+  width: 39%;
+}
+.word {
+  font-style: oblique;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.customButton {
+  background-color: black;
+  color: white;
+  width: 127px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  text-decoration: none;
+}
+
+.customButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

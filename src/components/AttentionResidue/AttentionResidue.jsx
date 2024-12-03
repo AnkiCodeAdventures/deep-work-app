@@ -1,4 +1,4 @@
-import { Button, Paper, Text, Title } from "@mantine/core";
+import { Paper, Text, Title } from "@mantine/core";
 import styles from "./attentionResidue.module.css";
 
 function AttentionResidue() {
@@ -23,7 +23,7 @@ function AttentionResidue() {
         goals. And to be present with a task for an extented period to attain a
         level of satisfaction. When switching between tasks, there should be a
         clear transition between Task A to Task B, by taking a minute to note
-        down what has been done and what's left to do next.
+        down what has been done and what&apos;s left to do next.
       </Text>
       <a
         target="_blank"
