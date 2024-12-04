@@ -5,6 +5,7 @@
   background-color: #ffcc70;
   color: black;
   width: 39%;
+  border-radius: 20px;
 }
 .word {
   font-style: oblique;

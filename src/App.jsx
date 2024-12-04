@@ -115,11 +115,13 @@ function App() {
             </span>
           </Button>
         </div>
-        <AboutCard />
-        <WhyCard />
-        <PsychologyCard />
-        <AttentionResidue />
-        <RulesCard />
+        <div className={styles.cardsContainer}>
+          <AboutCard />
+          <WhyCard />
+          <PsychologyCard />
+          <AttentionResidue />
+          <RulesCard />
+        </div>
       </div>
     </>
   );

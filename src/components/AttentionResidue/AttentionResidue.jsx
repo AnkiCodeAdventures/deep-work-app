@@ -7,7 +7,7 @@ function AttentionResidue() {
       <Title order={2}>Why Is It So Hard to Do My Work?</Title>
       <Text>
         In a 2009 paper, titled, intriguingly, “Why Is It So Hard to Do My
-        Work?,” Leroy introduced an effect she called{" "}
+        Work?,” Sophie Leroy introduced an effect she called{" "}
         <span className={styles.word}>attention residue.</span>
       </Text>
       <Text>
