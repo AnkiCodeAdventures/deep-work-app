@@ -1,0 +1,9 @@
+.rulesCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(212, 236, 130);
+  color: black;
+  flex-basis: 98%;
+  border-radius: 20px;
+}
