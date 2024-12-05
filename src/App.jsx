@@ -13,6 +13,11 @@ import WhyCard from "./components/WhyCard/WhyCard";
 import PsychologyCard from "./components/PsychologyCard/PsychologyCard";
 import AttentionResidue from "./components/AttentionResidue/AttentionResidue";
 import RulesCard from "./components/RulesCard/RulesCard";
+import RitualsCard from "./components/RitualsCard/RitualsCard";
+import OptimalWindow from "./components/OptimalWindow/OptimalWindow";
+import AccountabilityCard from "./components/AccountabilityCard/AccountabilityCard";
+import FocusCard from "./components/FocusCard/FocusCard";
+import PriorityCard from "./components/PriorityCard/PriorityCard";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -121,6 +126,11 @@ function App() {
           <PsychologyCard />
           <AttentionResidue />
           <RulesCard />
+          <RitualsCard />
+          <OptimalWindow />
+          <AccountabilityCard />
+          <FocusCard />
+          <PriorityCard />
         </div>
       </div>
     </>
