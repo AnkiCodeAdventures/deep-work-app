@@ -1,9 +1,9 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./ritualsCard.module.css";
+import styles from "./card.module.css";
 
 function RitualsCard() {
   return (
-    <Paper p="xl" shadow="xs">
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.rituals} `}>
       <Title order={2}>Deep Work Rituals</Title>
       <Text>
         <Text>

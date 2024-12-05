@@ -1,9 +1,9 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./priorityCard.module.css";
+import styles from "./card.module.css";
 
 function PriorityCard() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.about}>
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.priority} `}>
       <Title order={2}>Focus on the Wildly Important.</Title>
       <Text>
         The more you try to do, the less you actually accomplish. Jony Ives who

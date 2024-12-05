@@ -1,9 +1,9 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./focusCard.module.css";
+import styles from "./card.module.css";
 
 function FocusCard() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.about}>
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.focus} `}>
       <Title order={2}>Focus Over Distraction</Title>
       <Text>
         Don’t Take Breaks from Distraction. Instead Take Breaks from Focus. Many

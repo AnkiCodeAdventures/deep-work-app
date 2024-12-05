@@ -8,16 +8,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
-import AboutCard from "./components/AboutCard/AboutCard";
-import WhyCard from "./components/WhyCard/WhyCard";
-import PsychologyCard from "./components/PsychologyCard/PsychologyCard";
-import AttentionResidue from "./components/AttentionResidue/AttentionResidue";
-import RulesCard from "./components/RulesCard/RulesCard";
-import RitualsCard from "./components/RitualsCard/RitualsCard";
-import OptimalWindow from "./components/OptimalWindow/OptimalWindow";
-import AccountabilityCard from "./components/AccountabilityCard/AccountabilityCard";
-import FocusCard from "./components/FocusCard/FocusCard";
-import PriorityCard from "./components/PriorityCard/PriorityCard";
+import AboutCard from "./components/cards/AboutCard";
+import WhyCard from "./components/cards/WhyCard";
+import PsychologyCard from "./components/cards/PsychologyCard";
+import AttentionResidue from "./components/cards/AttentionResidue";
+import RulesCard from "./components/cards/RulesCard";
+import RitualsCard from "./components/cards/RitualsCard";
+import OptimalWindow from "./components/cards/OptimalWindow";
+import AccountabilityCard from "./components/cards/AccountabilityCard";
+import FocusCard from "./components/cards/FocusCard";
+import PriorityCard from "./components/cards/PriorityCard";
 
 const STATUS = {
   RUNNING: "RUNNING",

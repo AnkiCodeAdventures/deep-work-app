@@ -1,10 +1,10 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./psychologyCard.module.css";
+import styles from "./card.module.css";
 
 function PsychologyCard() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.psychology}>
-      <Title order={2}>Why deep work works?</Title>
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.psychology}`}>
+      <Title order={2}>Why Deep Work works?</Title>
       <Text>
         This understanding is important because it provides a neurological
         foundation for why deliberate practice works. By focusing intensely on a

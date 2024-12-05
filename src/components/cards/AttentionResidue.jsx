@@ -1,14 +1,18 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./attentionResidue.module.css";
+import styles from "./card.module.css";
 
 function AttentionResidue() {
   return (
-    <Paper p="xl" shadow="xs" className={styles.attentionResidue}>
+    <Paper
+      p="xl"
+      shadow="xs"
+      className={`${styles.card} ${styles.attentionResidue} `}
+    >
       <Title order={2}>Why Is It So Hard to Do My Work?</Title>
       <Text>
         In a 2009 paper, titled, intriguingly, “Why Is It So Hard to Do My
         Work?,” Sophie Leroy introduced an effect she called{" "}
-        <span className={styles.word}>attention residue.</span>
+        <span className={styles.highlight}>attention residue.</span>
       </Text>
       <Text>
         Attention residue reflects the persistence of cognitive activity about a

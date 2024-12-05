@@ -1,9 +1,9 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./whyCard.module.css";
+import styles from "./card.module.css";
 
 function WhyCard() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.why}>
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.why} `}>
       <Title order={2}>Why Deep Work is important?</Title>
       <Text>
         Deep work is necessary to wring every last drop of value out of your
@@ -22,13 +22,6 @@ function WhyCard() {
         exactly the same time it is becoming increasingly valuable in our
         economy. As a consequence, the few who cultivate this skill, and then
         make it the core of their working life, will thrive.
-      </Text>
-      <Text>
-        Deep work is so important that we might consider it, to use the phrasing
-        of business writer Eric Barker,{" "}
-        <span className={styles.word}>
-          “the superpower of the 21st century.”
-        </span>
       </Text>
     </Paper>
   );

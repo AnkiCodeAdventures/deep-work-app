@@ -1,0 +1,116 @@
+/* common styles for all cards */
+.card {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* specific cards */
+.about {
+  background-color: #f6f2ef;
+  color: black;
+  border: black solid 1px;
+  flex-basis: 34%;
+}
+
+.why {
+  background-color: #424242;
+  color: white;
+  flex-basis: 64%;
+}
+
+.psychology {
+  background: rgb(36, 141, 226);
+  background: linear-gradient(
+    63deg,
+    rgba(36, 141, 226, 1) 16%,
+    rgba(152, 83, 223, 1) 84%
+  );
+  color: white;
+  width: 58%;
+}
+
+.attentionResidue {
+  background-color: #ffcc70;
+  color: black;
+  width: 39%;
+}
+
+.rules {
+  /* background-color: rgb(212, 236, 130); */
+  background-color: #abc6be;
+  color: black;
+  flex-basis: 98%;
+}
+
+.rituals {
+  background-color: #7addb4;
+  color: black;
+  flex-basis: 98%;
+}
+
+.focus {
+  background-color: #424242;
+  color: white;
+  flex-basis: 98%;
+}
+
+.shutdown {
+  background-color: #ffa500;
+  color: black;
+  flex-basis: 98%;
+}
+
+.optimalWindow {
+  background: rgb(15, 141, 226);
+  background: linear-gradient(
+    162deg,
+    rgba(15, 141, 226, 1) 44%,
+    rgba(150, 82, 224, 1) 100%
+  );
+  color: white;
+  flex-basis: 68%;
+}
+
+.priority {
+  background-color: #4158d0;
+  color: white;
+  flex-basis: 48%;
+}
+
+accountability {
+  background-color: #f6f2ef;
+  color: black;
+  flex-basis: 48%;
+}
+
+/* additional styles */
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.highlight {
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.customButton {
+  background-color: black;
+  color: white;
+  width: 127px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  text-decoration: none;
+}
+
+.customButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

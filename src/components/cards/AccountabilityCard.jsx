@@ -1,9 +1,13 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./accountabilityCard.module.css";
+import styles from "./card.module.css";
 
 function AccountabilityCard() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.about}>
+    <Paper
+      shadow="xs"
+      p="xl"
+      className={`${styles.card} ${styles.accountability} `}
+    >
       <Title order={2}>Don’t Work Alone </Title>
       <Text>
         When it comes to deep work, consider the use of collaboration when

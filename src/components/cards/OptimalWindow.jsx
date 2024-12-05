@@ -1,9 +1,13 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./optimalWindow.module.css";
+import styles from "./card.module.css";
 
 function OptimalWindow() {
   return (
-    <Paper shadow="xs" p="xl" className={styles.about}>
+    <Paper
+      shadow="xs"
+      p="xl"
+      className={`${styles.card} ${styles.optimalWindow} `}
+    >
       <Title order={2}>Optimal Deep Work Window</Title>
       <Text>
         One should aim a maximum of 3-4 hours of deep work every weekday. In a

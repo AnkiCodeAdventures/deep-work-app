@@ -1,9 +1,9 @@
 import { Paper, Text, Title } from "@mantine/core";
-import styles from "./shutdownRitual.module.css";
+import styles from "./card.module.css";
 
 function ShutdownRitual() {
   return (
-    <Paper shadow="xs" p="xl">
+    <Paper shadow="xs" p="xl" className={`${styles.card} ${styles.shutdown} `}>
       <Title order={2}>Shutdown Ritual</Title>
       <Text>
         At the end of the workday, completely disconnect from work - &quot;no
