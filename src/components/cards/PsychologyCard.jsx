@@ -10,9 +10,9 @@ function PsychologyCard() {
         foundation for why deliberate practice works. By focusing intensely on a
         specific skill, you’re forcing the specific relevant circuit to fire,
         again and again, in isolation. This repetitive use of a specific circuit
-        triggers cells called oligodendrocytes to begin wrapping layers of
-        myelin around the neurons in the circuits—effectively cementing the
-        skill.
+        triggers cells called oligodendrocytes to begin wrapping{" "}
+        <span className={styles.highlight}>layers of myelin </span>around the
+        neurons in the circuits—effectively cementing the skill.
       </Text>
       <Text>
         The reason, therefore, why it’s important to focus intensely on the task

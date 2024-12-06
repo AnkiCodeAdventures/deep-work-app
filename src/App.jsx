@@ -18,6 +18,7 @@ import OptimalWindow from "./components/cards/OptimalWindow";
 import AccountabilityCard from "./components/cards/AccountabilityCard";
 import FocusCard from "./components/cards/FocusCard";
 import PriorityCard from "./components/cards/PriorityCard";
+import ShutdownRitual from "./components/cards/ShutdownRitual";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -127,10 +128,13 @@ function App() {
           <AttentionResidue />
           <RulesCard />
           <RitualsCard />
-          <OptimalWindow />
-          <AccountabilityCard />
           <FocusCard />
           <PriorityCard />
+          <AccountabilityCard />
+
+          <OptimalWindow />
+
+          <ShutdownRitual />
         </div>
       </div>
     </>

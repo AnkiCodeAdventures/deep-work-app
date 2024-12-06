@@ -28,41 +28,34 @@
     rgba(152, 83, 223, 1) 84%
   );
   color: white;
-  width: 58%;
+  width: 53%;
 }
 
 .attentionResidue {
   background-color: #ffcc70;
   color: black;
-  width: 39%;
+  width: 45%;
 }
 
 .rules {
-  /* background-color: rgb(212, 236, 130); */
-  background-color: #abc6be;
+  background-color: #f6f2ef;
   color: black;
-  flex-basis: 98%;
+  flex-basis: 45%;
 }
 
 .rituals {
   background-color: #7addb4;
   color: black;
-  flex-basis: 98%;
+  flex-basis: 53%;
 }
 
 .focus {
-  background-color: #424242;
-  color: white;
-  flex-basis: 98%;
-}
-
-.shutdown {
-  background-color: #ffa500;
+  background-color: #abc6be;
   color: black;
-  flex-basis: 98%;
+  flex-basis: 36%;
 }
 
-.optimalWindow {
+.priority {
   background: rgb(15, 141, 226);
   background: linear-gradient(
     162deg,
@@ -70,19 +63,25 @@
     rgba(150, 82, 224, 1) 100%
   );
   color: white;
-  flex-basis: 68%;
+  flex-basis: 62%;
 }
 
-.priority {
+.accountability {
+  background-color: #424242;
+  color: white;
+  flex-basis: 42%;
+}
+
+.optimalWindow {
+  flex-basis: 56%;
+  background-color: #ffcc70;
+  color: black;
+}
+
+.shutdown {
   background-color: #4158d0;
   color: white;
-  flex-basis: 48%;
-}
-
-accountability {
-  background-color: #f6f2ef;
-  color: black;
-  flex-basis: 48%;
+  flex-basis: 100%;
 }
 
 /* additional styles */
