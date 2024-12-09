@@ -8,17 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
-import AboutCard from "./components/cards/AboutCard";
-import WhyCard from "./components/cards/WhyCard";
-import PsychologyCard from "./components/cards/PsychologyCard";
-import AttentionResidue from "./components/cards/AttentionResidue";
-import RulesCard from "./components/cards/RulesCard";
-import RitualsCard from "./components/cards/RitualsCard";
-import OptimalWindow from "./components/cards/OptimalWindow";
-import AccountabilityCard from "./components/cards/AccountabilityCard";
-import FocusCard from "./components/cards/FocusCard";
-import PriorityCard from "./components/cards/PriorityCard";
-import ShutdownRitual from "./components/cards/ShutdownRitual";
+import CardsLayout from "./layout/CardsLayout";
 
 const STATUS = {
   RUNNING: "RUNNING",
@@ -121,21 +111,7 @@ function App() {
             </span>
           </Button>
         </div>
-        <div className={styles.cardsContainer}>
-          <AboutCard />
-          <WhyCard />
-          <PsychologyCard />
-          <AttentionResidue />
-          <RulesCard />
-          <RitualsCard />
-          <FocusCard />
-          <PriorityCard />
-          <AccountabilityCard />
-
-          <OptimalWindow />
-
-          <ShutdownRitual />
-        </div>
+        <CardsLayout />
       </div>
     </>
   );
