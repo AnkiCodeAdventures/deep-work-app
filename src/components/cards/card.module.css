@@ -5,13 +5,13 @@
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  border: black solid 1px;
 }
 
 /* specific cards */
 .about {
   background-color: #f6f2ef;
   color: black;
-  border: black solid 1px;
 }
 
 .why {

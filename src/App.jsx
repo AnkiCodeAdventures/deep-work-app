@@ -3,7 +3,7 @@ import "./App.css";
 import { Button } from "@mantine/core";
 import RenderTime from "./components/Timer/RenderTime";
 import styles from "./app.module.css";
-import NavBar from "./components/Timer/NavBar/NavBar";
+import NavBar from "./components/cards/NavBar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -71,6 +71,7 @@ function App() {
     <>
       <div className={styles.appContainer}>
         <NavBar />
+
         <div style={{ position: "relative" }}>
           <RenderTime
             hours={hours}

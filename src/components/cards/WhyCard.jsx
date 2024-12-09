@@ -8,7 +8,7 @@ function WhyCard() {
       <Text>
         Deep work is necessary to wring every last drop of value out of your
         current intellectual capacity. We now know from decades of research in
-        both psychology and neuroscience that
+        both psychology and neuroscience that{" "}
         <span className={styles.highlight}>
           the state of mental strain that accompanies deep work
         </span>{" "}

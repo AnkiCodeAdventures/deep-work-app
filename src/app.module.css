@@ -8,8 +8,8 @@
 }
 
 .timerButton {
-  background-color: black;
-  color: white;
+  background-color: var(--mantine-color-black);
+  color: var(--mantine-color-white);
   width: 128px;
   height: 41px;
   position: absolute;
@@ -27,8 +27,8 @@
 }
 
 .timerButton:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--mantine-color-black);
+  color: var(--mantine-color-white);
 }
 
 @media (max-width: 800px) {
