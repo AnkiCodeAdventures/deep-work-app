@@ -1,3 +1,4 @@
+import { Grid } from "@mantine/core";
 import AboutCard from "../components/cards/AboutCard";
 import AccountabilityCard from "../components/cards/AccountabilityCard";
 import AttentionResidue from "../components/cards/AttentionResidue";
@@ -14,17 +15,41 @@ import styles from "./cardsLayout.module.css";
 function CardsLayout() {
   return (
     <div className={styles.cardsContainer}>
-      <AboutCard />
-      <WhyCard />
-      <PsychologyCard />
-      <AttentionResidue />
-      <RulesCard />
-      <RitualsCard />
-      <FocusCard />
-      <PriorityCard />
-      <AccountabilityCard />
-      <OptimalWindow />
-      <ShutdownRitual />
+      <Grid columns={20} gutter="20px">
+        <Grid.Col span={{ sm: "8", base: "20" }}>
+          <AboutCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "12", base: "20" }}>
+          <WhyCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "11", base: "20" }}>
+          <PsychologyCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "9", base: "20" }}>
+          <AttentionResidue />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "9", base: "20" }}>
+          <RulesCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "11", base: "20" }}>
+          <RitualsCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "7", base: "20" }}>
+          <FocusCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "13", base: "20" }}>
+          <PriorityCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "11", base: "20" }}>
+          <AccountabilityCard />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "9", base: "20" }}>
+          <OptimalWindow />
+        </Grid.Col>
+        <Grid.Col span={{ sm: "20", base: "20" }}>
+          <ShutdownRitual />
+        </Grid.Col>
+      </Grid>
     </div>
   );
 }

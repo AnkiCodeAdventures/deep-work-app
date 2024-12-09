@@ -4,6 +4,7 @@
   border-radius: 20px;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
 }
 
 /* specific cards */
@@ -11,13 +12,11 @@
   background-color: #f6f2ef;
   color: black;
   border: black solid 1px;
-  flex-basis: 34%;
 }
 
 .why {
   background-color: #424242;
   color: white;
-  flex-basis: 64%;
 }
 
 .psychology {
@@ -28,31 +27,26 @@
     rgba(152, 83, 223, 1) 84%
   );
   color: white;
-  width: 53%;
 }
 
 .attentionResidue {
   background-color: #ffcc70;
   color: black;
-  width: 45%;
 }
 
 .rules {
   background-color: #f6f2ef;
   color: black;
-  flex-basis: 45%;
 }
 
 .rituals {
   background-color: #7addb4;
   color: black;
-  flex-basis: 53%;
 }
 
 .focus {
   background-color: #abc6be;
   color: black;
-  flex-basis: 36%;
 }
 
 .priority {
@@ -63,17 +57,14 @@
     rgba(150, 82, 224, 1) 100%
   );
   color: white;
-  flex-basis: 62%;
 }
 
 .accountability {
   background-color: #424242;
   color: white;
-  flex-basis: 42%;
 }
 
 .optimalWindow {
-  flex-basis: 56%;
   background-color: #ffcc70;
   color: black;
 }
@@ -81,7 +72,6 @@
 .shutdown {
   background-color: #4158d0;
   color: white;
-  flex-basis: 100%;
 }
 
 /* additional styles */
